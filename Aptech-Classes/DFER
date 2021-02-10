@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void buro(int);
+void buro(int n)
+{
+int s,x;
+s=0;
+while(n!=0)
+ {
+ x=n%10;
+ s=s+x;
+ n=n/10;
+ }
+ if(s==10)
+ printf("MAGIC");
+ else
+ printf ("not MAGIC");
+}
+
+void main()
+{
+int m;
+clrscr();
+printf("Enter the no");
+scanf("%d",&m);
+buro(m);
+getch();
+}
